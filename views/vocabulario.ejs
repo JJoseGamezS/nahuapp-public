@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vocabulario</title>
+      <!-- Start CSS del loader -->
+  <link rel="stylesheet" href="./../css/loader.css">
+  <!-- End CSS del loader -->
+    <!--Start Componentes html-->
+    <script src="./../scrips/component.js"></script>
+    <head-component></head-component>
+    <!-- End Componentes html-->
+
+    <!-- Custom CSS -->
+    <style>
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .resultados {
+            margin-top: 20px;
+        }
+    </style>
+
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+</head>
+
+<body>
+    <!--Start Loader-->
+  <div id="loaderBackground">
+    <div id="loader" class="loadingio-spinner-ripple-2by998twmg8">
+      <div class="ldio-yzaezf3dcmj">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(function () {
+        document.getElementById('loaderBackground').style.display = 'none'; // Se oculta la animación de carga después de que el DOM está listo
+      }, 500); // Opcional: retrasa la desaparición 1 segundo ,1000
+    });
+  </script>
+  <!--End Loader-->
+    <!--Start Menu header-->
+    <header-component></header-component>>
+    <!--End Menu header-->
+
+    <div class="container">
+
+        <h1>Vocabulario</h1>
+
+        <form id="busqueda-form">
+
+            <div class="form-group">
+                <label for="palabra">Palabra:</label>
+                <input type="text" class="form-control" id="palabra" placeholder="Ingresa una palabra">
+            </div>
+
+            <div class="form-group">
+                <label for="letra">Filtrar por letra:</label>
+                <select class="form-control" id="letra">
+                    <option value="">Todas</option>
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                    <option value="c">C</option>
+                    <option value="d">D</option>
+                    <option value="e">E</option>
+                    <option value="f">F</option>
+                    <option value="g">G</option>
+                    <option value="h">H</option>
+                    <option value="i">I</option>
+                    <option value="j">J</option>
+                    <option value="k">K</option>
+                    <option value="l">L</option>
+                    <option value="m">M</option>
+                    <option value="n">N</option>
+                    <option value="ñ">Ñ</option>
+                    <option value="o">O</option>
+                    <option value="p">P</option>
+                    <option value="q">Q</option>
+                    <option value="r">R</option>
+                    <option value="s">S</option>
+                    <option value="t">T</option>
+                    <option value="u">U</option>
+                    <option value="v">V</option>
+                    <option value="w">W</option>
+                    <option value="x">X</option>
+                    <option value="y">Y</option>
+                    <option value="z">Z</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Buscar</button>
+
+        </form>
+
+        <div class="resultados">
+            <h2>Resultados:</h2>
+            <ul id="resultado"></ul>
+        </div>
+
+
+
+        <script>
+            $(document).ready(function () {
+                $('#busqueda-form').submit(function (event) {
+                    event.preventDefault(); // Evita el envío del formulario por defecto
+                    
+                    var palabra = $('#palabra').val();
+                    var letra = $('#letra').val();
+    
+                    // Realizar la solicitud a la API
+                    $.ajax({
+                        url: 'http://localhost:3000/api/languages/' + palabra,
+                        method: 'GET',
+                        dataType: 'json',
+                        success: function (data) {
+                            mostrarResultados(data);
+                        },
+                        error: function (error) {
+                            console.log('Error al obtener los datos:', error);
+                        }
+                    });
+                });
+    
+                // Función para mostrar los resultados en la página
+                function mostrarResultados(resultados) {
+                    var listaResultados = $('#resultado');
+                    listaResultados.empty();
+    
+                    resultados.forEach(function (resultado) {
+                        var item = $('<li>').text('ID: ' + resultado.id + ', Español: ' + resultado.espanol + ', Nahuatl: ' + resultado.nahuatl);
+                        listaResultados.append(item);
+                    });
+                }
+            });
+        </script>
+
+
+
+    </div>
+      <!--Start Menu footer-->
+      <footer-component></footer-component>
+      <!--Start Menu footer-->
+</body>
+</html>

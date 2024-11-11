@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Ejercicios</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Start CSS del loader -->
+  <link rel="stylesheet" href="./../css/loader.css">
+  <!-- End CSS del loader -->
+  <!--Start Componentes html-->
+  <script src="./../scrips/component.js"></script>
+  <head-component></head-component>
+  <!-- End Componentes html-->
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--Start Loader-->
+  <div id="loaderBackground">
+    <div id="loader" class="loadingio-spinner-ripple-2by998twmg8">
+      <div class="ldio-yzaezf3dcmj">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(function () {
+        document.getElementById('loaderBackground').style.display = 'none'; // Se oculta la animación de carga después de que el DOM está listo
+      }, 500); // Opcional: retrasa la desaparición 1 segundo ,1000
+    });
+  </script>
+  <!--End Loader-->
+
+  <!--Start Menu header-->
+  <header-component></header-component>
+  <!--End Menu header-->
+
+  <!-- Modal -->
+  <div class="modal fade modal-dialog modal-dialog-centered" id="exampleModal" tabindex="-1"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">¿Te consideras un experto en la lengua náhuatl? ¡Es hora
+            de demostrarlo!</h1>
+        </div>
+        <div class="modal-body">
+          Aquí podrás poner a prueba
+          tus conocimientos sobre náhuatl. Selecciona un tema y responde las preguntas con atención.
+          <br> Al finalizar, recibiras tu puntuacion.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Selección de temas</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal -->
+
+  <div class="container py-5">
+    <!--Seccion Unidad 1-->
+    <div class="d-flex align-items-center p-3 my-3 m-3 text-white bg-info rounded shadow-sm" data-bs-toggle="collapse"
+      href="#unidad-uno">
+      <i id="icono_secciones_ejercicios" class="bi bi-journal-bookmark bi-3x px-2 "></i>
+      <div class="lh-1">
+        <h1 class="h6 mb-0 text-white lh-1">Unidad 1</h1>
+        <small>Esbozo de la interculturalidad de la lengua nahuatl.</small>
+      </div>
+      <i class="bi bi-arrow-right-short ms-auto fs-2 icon-hover"></i>
+    </div>
+
+    <!--Temas U1-->
+    <div class="container py-5 collapse" id="unidad-uno">
+
+      <div class="main-timeline-4 text-white">
+
+        <div class="timeline-4 left-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>La lengua nahuatl.</h4>
+              <p class="small text-white-50 mb-4">Tema 1.1</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 1.1: La lengua Nahuatl." quizz="q1_1.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="timeline-4 right-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>Pronombres personales</h4>
+              <p class="small text-white-50 mb-4">Tema 1.2</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 1.2: Pronombres personales."
+                quizz="q1_2.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="timeline-4 left-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>Pronombres objeto.</h4>
+              <p class="small text-white-50 mb-4">Tema 1.3</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 1.3: Pronombres objeto." quizz="q1_3.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="timeline-4 right-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>Prefijos indefinidos</h4>
+              <p class="small text-white-50 mb-4">Tema 1.4</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 1.4: Prefijos indefinidos."
+                quizz="q1_4.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="timeline-4 left-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>Posesivos.</h4>
+              <p class="small text-white-50 mb-4">Tema 1.5</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 1.5: Posesivos." quizz="q1_5.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="timeline-4 right-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>Transitivos</h4>
+              <p class="small text-white-50 mb-4">Tema 1.6</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 1.6: Transitivos." quizz="q1_6.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="timeline-4 left-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>Intransitivos.</h4>
+              <p class="small text-white-50 mb-4">Tema 1.7</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 1.7: Intransitivos." quizz="q1_7.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="timeline-4 right-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>Reflexivos.</h4>
+              <p class="small text-white-50 mb-4">Tema 1.8</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 1.8: Reflexivos." quizz="q1_8.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="timeline-4 left-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>Tiempos verbales.</h4>
+              <p class="small text-white-50 mb-4">Tema 1.9</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 1.9: Tiempos verbales." quizz="q1_9.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="timeline-4 right-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>Interrogativos.</h4>
+              <p class="small text-white-50 mb-4">Tema 1.10</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 1.10: Interrogativos." quizz="q1_10.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--Seccion Unidad 2-->
+    <div class="d-flex align-items-center p-3 my-3 m-3 text-white bg-info rounded shadow-sm" data-bs-toggle="collapse"
+      href="#unidad-dos">
+      <i id="icono_secciones_ejercicios" class="bi bi-journal-bookmark bi-3x px-2 "></i>
+      <div class="lh-1">
+        <h1 class="h6 mb-0 text-white lh-1">Unidad 2</h1>
+        <small>Interacciones basicas.</small>
+      </div>
+      <i class="bi bi-arrow-right-short ms-auto fs-2 icon-hover"></i>
+    </div>
+
+    <!--Temas U2-->
+    <div class="container py-5 collapse" id="unidad-dos">
+
+      <div class="main-timeline-4 text-white">
+
+        <div class="timeline-4 left-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>Saludos y despedidas.</h4>
+              <p class="small text-white-50 mb-4">Tema 2.1</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 2.1: Saludos y despedidas."
+                quizz="q2_1.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="timeline-4 right-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>Mi nombre es...</h4>
+              <p class="small text-white-50 mb-4">Tema 2.2</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 2.2: Mi nombre es..." quizz="q2_2.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-4 left-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>Vivo en...</h4>
+              <p class="small text-white-50 mb-4">Tema 2.3</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 2.3: Vivo en..." quizz="q2_3.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="timeline-4 right-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>Naci en...</h4>
+              <p class="small text-white-50 mb-4">Tema 2.4</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 2.4: Naci en..." quizz="q2_4.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-4 left-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>La numeracion.</h4>
+              <p class="small text-white-50 mb-4">Tema 2.5</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 2.5: La numeracion." quizz="q2_5.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="timeline-4 right-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>Tengo x años.</h4>
+              <p class="small text-white-50 mb-4">Tema 2.6</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 2.6: Tengo x años." quizz="q2_6.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-4 left-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>El verbo "Me gusta".</h4>
+              <p class="small text-white-50 mb-4">Tema 2.7</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 2.7: El verbo 'Me gusta'." quizz="q2_7.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="timeline-4 right-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>Verbos en infinitivo...</h4>
+              <p class="small text-white-50 mb-4">Tema 2.8</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 2.8: Verbos en infinitivo."
+                quizz="q2_8.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-4 left-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>Estados animicos.</h4>
+              <p class="small text-white-50 mb-4">Tema 2.9</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 2.9: Estados animicos." quizz="q2_9.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="timeline-4 right-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>Estudio y trabajo.</h4>
+              <p class="small text-white-50 mb-4">Tema 2.10</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 2.10: Estudio y trabajo." quizz="q2_10.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--Seccion Unidad 3-->
+    <div class="d-flex align-items-center p-3 my-3 m-3 text-white bg-info rounded shadow-sm" data-bs-toggle="collapse"
+      href="#unidad-tres">
+      <i id="icono_secciones_ejercicios" class="bi bi-journal-bookmark bi-3x px-2 "></i>
+      <div class="lh-1">
+        <h1 class="h6 mb-0 text-white lh-1">Unidad 3</h1>
+        <small>Descripcion de personas y objetos.</small>
+      </div>
+      <i class="bi bi-arrow-right-short ms-auto fs-2 icon-hover"></i>
+    </div>
+
+    <!--Temas U3-->
+    <div class="container py-5 collapse" id="unidad-tres">
+
+      <div class="main-timeline-4 text-white">
+
+        <div class="timeline-4 left-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4> mi me gusta el color.</h4>
+              <p class="small text-white-50 mb-4">Tema 3.1</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 3.1: Me gusta el color." quizz="q3_1.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="timeline-4 right-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>Frutas y verduras.</h4>
+              <p class="small text-white-50 mb-4">Tema 3.2</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 3.2: Frutas y verduras." quizz="q3_2.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-4 left-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>Descripcion de personas.</h4>
+              <p class="small text-white-50 mb-4">Tema 3.3</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 3.3: Descripcion de personas."
+                quizz="q3_3.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--Seccion Unidad 4-->
+    <div class="d-flex align-items-center p-3 my-3 m-3 text-white bg-info rounded shadow-sm" data-bs-toggle="collapse"
+      href="#unidad-cuatro">
+      <i id="icono_secciones_ejercicios" class="bi bi-journal-bookmark bi-3x px-2 "></i>
+      <div class="lh-1">
+        <h1 class="h6 mb-0 text-white lh-1">Unidad 4</h1>
+        <small>La familia.</small>
+      </div>
+      <i class="bi bi-arrow-right-short ms-auto fs-2 icon-hover"></i>
+    </div>
+
+    <!--Temas U4-->
+    <div class="container py-5 collapse" id="unidad-cuatro">
+
+      <div class="main-timeline-4 text-white">
+
+        <div class="timeline-4 left-4">
+          <div class="bg-primary">
+            <div class="card-body p-4">
+              <i class="bi bi-journal-text"></i>
+              <h4>Parentesco.</h4>
+              <p class="small text-white-50 mb-4">Tema 4.1</p>
+              <a class="btn btn-secondary start-btn" topic="Tema 4.1: Parentesco." quizz="q4_1.js">Comenzar</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--Section Script-->
+  <script src="./../scrips/QuestionsScript.js"></script>
+
+  <!--Start Menu footer-->
+  <footer-component></footer-component>
+  <!--Start Menu footer-->
+</body>
+
+</html>

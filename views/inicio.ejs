@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Inicio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Start CSS del loader -->
+  <link rel="stylesheet" href="./../css/loader.css">
+  <!-- End CSS del loader -->
+  <!--Start Componentes html-->
+  <script src="./../scrips/component.js"></script>
+  <head-component></head-component>
+  <!-- End Componentes html-->
+</head>
+
+<body>
+
+  <!--Start Loader-->
+  <div id="loaderBackground">
+    <div id="loader" class="loadingio-spinner-ripple-2by998twmg8">
+      <div class="ldio-yzaezf3dcmj">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(function () {
+        document.getElementById('loaderBackground').style.display = 'none'; // Se oculta la animación de carga después de que el DOM está listo
+      }, 500); // Opcional: retrasa la desaparición 1 segundo ,1000
+    });
+  </script>
+  <!--End Loader-->
+
+  <!--Start Menu header-->
+  <header-component></header-component>
+  <!--End Menu header-->
+
+  <!--Container-->
+  <div class="container my-5">
+    <h1>Bienvenido a nahua.app</h1>
+    <p class="lead">Propuesta didáctica con el uso de tecnologías web para el apoyo en la enseñanza de la lengua
+      náhuatl en el Centro de Enseñanza de Idiomas de la Facultad de Estudios Superiores de Acatlán.
+    </p>
+    <div class="card mb-5">
+      <div class="card-body">
+        <h2 class="card-title">Acerca del Proyecto</h2>
+        <p class="card-text">
+          Esta propuesta de trabajo surge a partir de mi interés por aprender la lengua náhuatl y las observaciones
+          durante mi participación como estudiante en el curso de náhuatl. Fue ahí donde el profesor Felipe Brigido nos
+          mencionaba que él mismo había creado material didáctico o ejercicios porque le resultaba difícil o imposible
+          encontrar recursos para impartir su curso.
+        </p>
+        <p class="card-text">
+          Es necesario que quienes estudien la lengua cuenten con una herramienta de apoyo para desarrollar las
+          destrezas e integrarse en un nuevo mundo lingüístico. La aplicación educativa para aprender náhuatl tiene como
+          objetivo proporcionar una herramienta de fácil acceso para desarrollar las competencias de la lengua.
+        </p>
+        <p class="card-text">
+          Esta tecnología debe contar con las siguientes características:
+        <ul>
+          <li>Sea independiente de la plataforma (MAC OS, Linux, Windows).</li>
+          <li>Ejecutable en dispositivos móviles.</li>
+        </ul>
+        </p>
+        <p class="card-text">
+          Se utilizarán tecnologías como HTML, CSS, JS, tecnologías responsivas como Bootstrap, y de desarrollo móvil. 
+          Las competencias que se busca desarrollar en el alumnado durante este curso serán
+          definidas en conjunto con el profesor del curso.
+        </p>
+        <p class="card-text">
+          Por último, se definirán e implementarán
+          los ejercicios prácticos, el diseño e implementación de la base de datos del vocabulario del curso.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--Start Menu footer-->
+  <footer-component></footer-component>
+  <!--Start Menu footer-->
+</body>
+
+</html>

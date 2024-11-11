@@ -1,0 +1,118 @@
+/* Estilos para el contenedor del loader */
+#loaderBackground {
+    background-color: white;
+    position: fixed;  /* Fija el fondo en la ventana del navegador */
+    top: 0;           /* Posiciona el fondo en la parte superior de la pantalla */
+    left: 0;          /* Posiciona el fondo en la parte izquierda de la pantalla */
+    width: 100%;      /* Asegura que el fondo cubra el 100% del ancho de la pantalla */
+    height: 100%;     /* Asegura que el fondo cubra el 100% de la altura de la pantalla */
+    z-index: 9998;    /* Establece el índice Z por debajo del loader pero por encima del contenido */
+  }
+  
+  /* Definición de la animación para el loader */
+  @keyframes ldio-yzaezf3dcmj {
+    0% {
+      top: 118.58px;
+      /* Posiciona el borde superior del círculo inicial en 118.58px */
+      left: 118.58px;
+      /* Posiciona el borde izquierdo del círculo inicial en 118.58px */
+      width: 0;
+      /* El ancho inicial del círculo es 0 */
+      height: 0;
+      /* La altura inicial del círculo es 0 */
+      opacity: 1;
+      /* El círculo es completamente visible al inicio */
+    }
+  
+    100% {
+      top: 22.99px;
+      /* Posiciona el borde superior del círculo final en 22.99px */
+      left: 22.99px;
+      /* Posiciona el borde izquierdo del círculo final en 22.99px */
+      width: 191.18px;
+      /* El ancho final del círculo es 191.18px */
+      height: 191.18px;
+      /* La altura final del círculo es 191.18px */
+      opacity: 0;
+      /* El círculo se desvanece hasta ser completamente invisible */
+    }
+  }
+  
+  /* Estilos para los elementos internos de la animación */
+  .ldio-yzaezf3dcmj div {
+    position: absolute;
+    /* Posiciona los círculos de manera absoluta dentro de su contenedor */
+    border-width: 2.42px;
+    /* Establece el grosor del borde de los círculos */
+    border-style: solid;
+    /* El estilo del borde es sólido */
+    opacity: 1;
+    /* Los círculos son completamente visibles al inicio */
+    border-radius: 50%;
+    /* Hace que los bordes de los círculos sean redondeados, creando la forma circular */
+    animation: ldio-yzaezf3dcmj 1.0101010101010102s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    /* Aplica la animación a los círculos, con una duración y curva de animación específica, y se repite infinitamente */
+  }
+  
+  /* Estilos específicos para el primer círculo en la animación */
+  .ldio-yzaezf3dcmj div:nth-child(1) {
+    border-color: #0d6cfa;
+    /* Color del borde del primer círculo (azul oscuro) */
+    animation-delay: 0s;
+    /* Sin retraso en el inicio de la animación del primer círculo */
+  }
+  
+  /* Estilos específicos para el segundo círculo en la animación */
+  .ldio-yzaezf3dcmj div:nth-child(2) {
+    border-color: #0dcbf2;
+    /* Color del borde del segundo círculo (azul claro) */
+    animation-delay: -0.5050505050505051s;
+    /* Retraso en el inicio de la animación del segundo círculo, creando un efecto de desfasado con el primer círculo */
+  }
+  
+  /* Estilos para el contenedor principal del loader */
+  .loadingio-spinner-ripple-2by998twmg8 {
+    width: 242px;
+    /* Ancho del contenedor de la animación */
+    height: 242px;
+    /* Altura del contenedor de la animación */
+    display: inline-block;
+    /* El contenedor se muestra como un bloque en línea */
+    overflow: hidden;
+    /* Oculta cualquier contenido que desborde del contenedor */
+    background: none;
+    /* No tiene fondo */
+    position: fixed;
+    /* Fija el contenedor en la ventana del navegador */
+    top: 50%;
+    /* Centra el contenedor verticalmente en la pantalla */
+    left: 50%;
+    /* Centra el contenedor horizontalmente en la pantalla */
+    transform: translate(-50%, -50%);
+    /* Ajusta la posición del contenedor para que esté centrado en la pantalla */
+    z-index: 9999;
+    /* Asegura que el contenedor esté por encima de otros elementos */
+  }
+  
+  /* Estilos adicionales para el contenedor de la animación */
+  .ldio-yzaezf3dcmj {
+    width: 100%;
+    /* Ancho del contenedor interno es el 100% del contenedor principal */
+    height: 100%;
+    /* Altura del contenedor interno es el 100% del contenedor principal */
+    position: relative;
+    /* Posiciona los elementos hijos relativamente dentro del contenedor interno */
+    transform: translateZ(0) scale(1);
+    /* Establece una transformación en el eje Z y escala el contenedor a su tamaño original */
+    backface-visibility: hidden;
+    /* Oculta la parte posterior del contenedor cuando está girado */
+    transform-origin: 0 0;
+    /* Establece el punto de origen de la transformación en la esquina superior izquierda */
+  }
+  
+  /* Asegura que los elementos internos se ajusten correctamente al tamaño del contenedor */
+  .ldio-yzaezf3dcmj div {
+    box-sizing: content-box;
+    /* Incluye el borde en el cálculo del tamaño de los elementos, sin afectar el tamaño del contenido */
+  }
+  
